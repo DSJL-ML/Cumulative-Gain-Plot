@@ -14,9 +14,9 @@ To use this function, download and save the .py file into your working directory
 The code was developed in Python 3.5. The use of this function requires sklearn.metrics and matplotlib. 
 When using this function in your code, type the following code:
 
-`import matplotlib.pyplot as plt`
-`from sklearn.metrics import auc`
-`from Cumulative_Grain_plot import cumulative_gain_plot`
+`import matplotlib.pyplot as plt
+from sklearn.metrics import auc
+from Cumulative_Grain_plot import cumulative_gain_plot`
 
 ## License
 
