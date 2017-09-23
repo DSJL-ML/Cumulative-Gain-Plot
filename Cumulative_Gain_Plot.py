@@ -1,13 +1,10 @@
-# Function for creating Cumulative Gain plot for a binary classifier
-# Return 3 lists:
-# accumulative gain
-# sample population cumulative
-# descending predicted probability
-
 import matplotlib.pyplot as plt
 from sklearn.metrics import auc
 
 def cumulative_gain_plot(model, X, y,label=None):
+    """This function will create Cumulative gain plot for a binary classifier.
+    It will return 3 lists:
+    cumulative gain, sample population cumulative, descending predicted probability."""
 
     # extract predicted class probability to be positive
     proba_pos = model.predict_proba(X)[:,1]
